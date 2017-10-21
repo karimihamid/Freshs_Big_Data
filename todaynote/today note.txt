@@ -1,0 +1,80 @@
+ mkdir directory
+
+     git clone https://github.com/karimihamid/Freshs_Big_Data.git
+     cd Freshs_Big_Data/
+     git add hamid
+     git status
+     rm .hamid.swn
+     git status
+    cd Freshs_Big_Data/
+    git add lecture1/
+    git commit -m "lecture1"
+    git push origin master
+
+
+
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class first_class {
+    public static void main(String[] arg) {
+
+        try {
+            FileReader file = new FileReader("C:\\Users\\conted\\big_data_course\\lecture1\\emp_salary.dat");
+            BufferedReader br = new BufferedReader(file);
+            String record;
+            while ((record = br.readLine()) != null) {
+                System.out.println(record);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+}
+
+
+
+
+example:
+
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class first_class {
+    private static String[] fields;
+
+    public static void main(String[] arg) {
+
+        try {
+            FileReader file = new FileReader("C:\\Users\\conted\\big_data_course\\lecture1\\emp_salary.dat");
+            BufferedReader br = new BufferedReader(file);
+            String record;
+            while ((record = br.readLine()) != null) {
+                fields = record.split( "\\|");
+                System.out.println("key: " + fields[0] + " , value:" + fields[2]);
+
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+}
+
+
+
+
+
+
+
