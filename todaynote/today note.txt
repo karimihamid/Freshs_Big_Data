@@ -1,8 +1,8 @@
  mkdir directory
 
      git clone https://github.com/karimihamid/Freshs_Big_Data.git
-     cd Freshs_Big_Data/
-     git add hamid
+     cd Freshs_Big_Data/ (master)
+     git add hamid or git pull
      git status
      rm .hamid.swn
      git status
